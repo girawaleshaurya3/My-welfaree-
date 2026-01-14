@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eligibility Checker</title>
+  <link rel="stylesheet" href="checker.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-…" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="background-pattern"></div>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <img src="Vector.png" alt="MyWelfare" class="logo-icon">
+        <span class="logo-text">MyWelfare</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="schemes.html" class="nav-item">Schemes</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="checker-section">
+    <div class="container">
+      <div class="center-box checker-box">
+        <h1>Subsidy Eligibility Checker</h1>
+        <form id="eligibilityForm" action="eli.html">
+          <input type="number" name="age" placeholder="Age" required />
+          <input type="number" name="income" placeholder="Annual Income" required />
+          <input type="text" name="location" placeholder="Location / District" required />
+          <select name="occupation" required>
+            <option value="" disabled selected>Select Occupation</option>
+            <option value="farmer">Farmer</option>
+            <option value="student">Student</option>
+            <option value="unemployed">Unemployed</option>
+          </select>
+          <select name="caste" required>
+            <option value="" disabled selected>Select Caste</option>
+            <option value="general">General</option>
+            <option value="obc">OBC</option>
+            <option value="scst">SC/ST</option>
+          </select>
+          <button type="submit" class="elibutt">Check</button>
+        </form>
+        <div id="resultMessage" class="result-message"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <footer class="site-footer">
+    <div class="container">
+      © 2025 MyWelfare. All rights reserved.
+    </div>
+  </footer> -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>

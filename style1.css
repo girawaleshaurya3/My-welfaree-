@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+}
+
+.navbar {
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #DEEEFF;
+  align-items: center;
+  gap: 10px;
+  padding: 0 1rem;
+}
+
+.logo-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 50px;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.Circle {
+  background-color: grey;
+  color: white;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  text-align: center;
+}
+
+.agriculture{
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+}
+
+.Schemetype {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+/* Main */
+.main-container {
+  padding: 1rem;
+  display: flex;              /* use flexbox instead of grid */
+  flex-direction: column;     /* stack items vertically */
+  gap: 1.5rem;
+}
+
+.schemes {
+  background-color: #F0F5E5;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: grey;
+  font-size: 15px;
+}
+
+.info {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #555;
+}
+
+.capsules {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.category {
+  background-color: white;
+  padding: 5px 12px;
+  border: 1px solid green;
+  color: green;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: #fff;
+  margin-top: 2rem;
+  padding: 2rem 1rem 1rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.footer-col ul li a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.social-links a {
+  color: #bbb;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .main-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .Schemetype {
+    font-size: 35px;
+  }
+}

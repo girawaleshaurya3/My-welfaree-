@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Welfare Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div>
+                <img src="MyWelfare.jpeg" alt="My Welfare Banner" class="image">
+            </div>
+            <br>
+            <form action="save_user.php" method="POST">
+                <h1>MyWelfare</h1>
+                <div class="form-group">
+                    <label for="">Name</label>
+                    <input type="text" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Email Id</label>
+                    <input type="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Mobile Number</label>
+                    <input type="tel" name="mobile" class="form-control" required>
+                </div>
+                <input type="submit" class="btn" value="Login">
+            </form>
+
+        </div>
+    </header>
+</body>
+
+</html>
